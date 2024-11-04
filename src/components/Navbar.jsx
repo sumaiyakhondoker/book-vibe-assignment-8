@@ -38,7 +38,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to='/' className="btn btn-ghost text-2xl font-bold text-[color-primary] ">
+        <Link to='/' className="btn pl-0 lg:pl-4 btn-ghost text-lg lg:text-2xl font-bold text-[color-primary] ">
           Book Vibe
         </Link>
       </div>
