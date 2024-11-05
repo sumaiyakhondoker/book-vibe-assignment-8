@@ -6,8 +6,8 @@ const Banner = () => {
                 <h1 className='text-3xl lg:text-5xl font-bold lg:leading-normal mb-5 lg:mb-8'>Books to freshen <br /> up your bookshelf</h1>
                 <button className='btn lg:px-5 bg-[#23BE0A] text-white hover:text-black text-lg font-bold'>View The List</button>
             </div>
-            <div>
-                <img src={bannerBookImg} alt="" />
+            <div >
+                <img className='h-40 lg:h-full' src={bannerBookImg} alt="" />
             </div>
         </div>
     );

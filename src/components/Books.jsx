@@ -1,11 +1,14 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import BookCard from "../pages/BookCard";
+// import Loader from "./Loader";
 
 const Books = () => {
   const books = useLoaderData()
   // console.log(booksData);
+  // const navigation = useNavigation()
+  // if(navigation.state === 'loading') return <Loader></Loader>
   return (
-    <div className=" lg:mt-16 lg:mb-24">
+    <div className=" my-10 lg:mt-16 lg:mb-24">
       <h2 className="text-4xl font-bold text-center mb-5">Books</h2>
 
       {/*lower part  */}

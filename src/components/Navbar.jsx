@@ -12,7 +12,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100  ">
+    <div className="navbar bg-base-100  fixed z-10 lg:-ml-32">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to='/' className="btn pl-0 lg:pl-4 btn-ghost text-lg lg:text-2xl font-bold text-[color-primary] ">
+        <Link to='/' className="btn lg:ml-2 pl-0 lg:pl-4 btn-ghost text-lg lg:text-2xl font-bold ">
           Book Vibe
         </Link>
       </div>

@@ -3,8 +3,10 @@ import Navbar from "../components/Navbar";
 
 const Root = () => {
   return (
-    <div className="lg:max-w-7xl mx-auto">
+    <div className="lg:max-w-7xl lg:mx-auto">
+      <div className="h-16">
       <Navbar></Navbar>
+      </div>
 
     
       <Outlet></Outlet>

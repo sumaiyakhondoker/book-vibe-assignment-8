@@ -27,7 +27,7 @@ const BookCard = ({book}) => {
           )}
           </div>
           <div className='pb-3 border-b-2 border-dashed border-gray-300 space-y-2'>
-          <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
+          <h3 className="text-lg lg:text-2xl font-semibold group-hover:underline group-focus:underline">
             {bookName}
           </h3>
           <p className="text-base font-medium text-gray-600">
