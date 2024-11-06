@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigation } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import BookCard from "../pages/BookCard";
 // import Loader from "./Loader";
 

@@ -1,9 +1,17 @@
-
+import { useLoaderData } from 'react-router-dom';
+import PageToReadBarchart from './PageToReadBarchart';
 
 const PagesToRead = () => {
+    const books = useLoaderData()
+    console.log(books);
+ 
+
+      
     return (
         <div>
-            <h2>this is pages to read route</h2>
+            {
+                books.map(book => <PageToReadBarchart key={book.bookId} book={book}></PageToReadBarchart>)
+            }
         </div>
     );
 };
