@@ -3,9 +3,10 @@ import Root from "../Root/Root";
 import Home from "../pages/Home";
 import BookDetails from "../pages/BookDetails";
 import ListedBooks from "../pages/ListedBooks";
-import PagesToRead from "../pages/PagesToRead";
 import ReadBooks from "../components/ReadBooks";
 import Wishlist from "../components/Wishlist";
+import PageToReadBarchart from "../pages/PageToReadBarchart";
+// import PagesToRead from '../pages/PagesToRead'
 
 export const router = createBrowserRouter([
     {
@@ -39,7 +40,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/pagestoread',
-          element: <PagesToRead></PagesToRead>,
+          element: <PageToReadBarchart></PageToReadBarchart>,
           loader: ()=> fetch('/booksData.json')
         }
         

@@ -1,5 +1,6 @@
 import { useLoaderData, useNavigation, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
+import toast from "react-hot-toast";
 
 
 const BookDetails = () => {
@@ -22,6 +23,13 @@ const BookDetails = () => {
     yearOfPublishing,
   } = book;
 
+  const handleReadBtn = ()=>{
+    toast.success('Book added to readlist successfully!')
+  }
+  const handleWishlistBtn = ()=>{
+    // toast.success('Book added to wishlist successfully!')
+    toast.error('You have already read this!')
+  }
   const navigation = useNavigation()
   if(navigation.state === 'loading') return <Loader></Loader>
   return (
@@ -68,8 +76,8 @@ const BookDetails = () => {
             
         </div>
         <div className="card-actions justify-start">
-          <button className="btn lg:px-5 bg-[#23BE0A] text-white hover:bg-white hover:text-black hover:border-[#23BE0A] mr-2">Read</button>
-          <button className="btn lg:px-5 bg-[#59C6D2] text-white hover:bg-white hover:text-black hover:border-[#59C6D2]">Wishlist</button>
+          <button onClick={handleReadBtn} className="btn lg:px-5 bg-[#23BE0A] text-white hover:bg-white hover:text-black hover:border-[#23BE0A] mr-2">Read</button>
+          <button onClick={handleWishlistBtn} className="btn lg:px-5 bg-[#59C6D2] text-white hover:bg-white hover:text-black hover:border-[#59C6D2]">Wishlist</button>
         </div>
       </div>
     </div>
