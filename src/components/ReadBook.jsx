@@ -4,6 +4,7 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
 const ReadBook = ({book}) => {
+
     const {bookId,image,bookName,author,category,tags,rating,totalPages,publisher,yearOfPublishing} = book
     return (
         <div className="p-5 border border-gray-300 rounded-2xl shadow-xl ">

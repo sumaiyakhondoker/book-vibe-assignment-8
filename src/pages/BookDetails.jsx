@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigation, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import toast from "react-hot-toast";
+import { getStoredReadBooks, saveReadBooks } from "../utils";
 
 
 const BookDetails = () => {
@@ -24,7 +25,10 @@ const BookDetails = () => {
   } = book;
 
   const handleReadBtn = ()=>{
-    toast.success('Book added to readlist successfully!')
+    // console.log('hello iam read btn');
+    saveReadBooks(book)
+    
+    // console.log(getStoredReadBooks());
   }
   const handleWishlistBtn = ()=>{
     // toast.success('Book added to wishlist successfully!')
@@ -76,7 +80,7 @@ const BookDetails = () => {
             
         </div>
         <div className="card-actions justify-start">
-          <button onClick={handleReadBtn} className="btn lg:px-5 bg-[#23BE0A] text-white hover:bg-white hover:text-black hover:border-[#23BE0A] mr-2">Read</button>
+          <button onClick={handleReadBtn} className="btn px-0 lg:px-5 hover:bg-[#23BE0A] hover:text-white text-black border-2 border-gray-300  mr-2">Read</button>
           <button onClick={handleWishlistBtn} className="btn lg:px-5 bg-[#59C6D2] text-white hover:bg-white hover:text-black hover:border-[#59C6D2]">Wishlist</button>
         </div>
       </div>
