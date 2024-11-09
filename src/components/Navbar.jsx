@@ -8,6 +8,9 @@ const Navbar = () => {
 <NavLink to="/" className={({isActive})=> isActive ? 'border transition px-2 lg:px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>Home</NavLink>
 <NavLink to="/listedbooks" className={({isActive})=> isActive ? 'border transition px-2 lg:px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>Listed Books</NavLink>
 <NavLink to="/pagestoread" className={({isActive})=> isActive ? 'border px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>Pages to Read</NavLink>
+<NavLink to="/authors" className={({isActive})=> isActive ? 'border px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>Authors</NavLink>
+<NavLink to="/contact" className={({isActive})=> isActive ? 'border px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>Contact Us</NavLink>
+<NavLink to="/about" className={({isActive})=> isActive ? 'border px-4 rounded-lg py-2 border-[#23BE0A] text-[#23BE0A] bg-white hover:bg-[#23BE0A] hover:text-white' : ''}>About Us</NavLink>
  </>
   );
 

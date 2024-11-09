@@ -16,7 +16,7 @@ const ListedBooks = () => {
           <summary className="btn m-1 lg:px-5 bg-[#23BE0A] text-white hover:text-black">
             Sort By <IoIosArrowDown size={20}></IoIosArrowDown>
           </summary>
-          <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <ul className="menu text-center dropdown-content bg-base-100 rounded-box z-[1] w-52  shadow">
             <li className="bg-white text-black transition hover:bg-[#23BE0A] hover:text-white cursor-pointer">
             Rating
             </li>

@@ -4,10 +4,14 @@ import Home from "../pages/Home";
 import BookDetails from "../pages/BookDetails";
 import ListedBooks from "../pages/ListedBooks";
 import ReadBooks from "../components/ReadBooks";
-import Wishlist from "../components/Wishlist";
+
 import PageToReadBarchart from "../pages/PageToReadBarchart";
 import ErrorPage from "../pages/ErrorPage";
-// import PagesToRead from '../pages/PagesToRead'
+import WishlistBooks from "../components/WishlistBooks";
+import Authors from "../pages/Authors";
+import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
+
 
 export const router = createBrowserRouter([
     {
@@ -36,7 +40,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'wishlistbooks',
-                element: <Wishlist></Wishlist>
+                element: <WishlistBooks></WishlistBooks>
             }
           ]
         },
@@ -44,6 +48,20 @@ export const router = createBrowserRouter([
           path:'/pagestoread',
           element: <PageToReadBarchart></PageToReadBarchart>,
           loader: ()=> fetch('/booksData.json')
+        },
+        {
+          path: '/authors',
+          element: <Authors></Authors>,
+          loader: ()=> fetch('/authorsData.json')
+        },
+        {
+          path: '/about',
+          element: <AboutUs></AboutUs>,
+
+        },
+        {
+          path: '/contact',
+          element:<ContactUs></ContactUs>
         }
         
       ]  

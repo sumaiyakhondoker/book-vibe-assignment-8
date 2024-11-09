@@ -1,10 +1,11 @@
-import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+// import { useLoaderData } from 'react-router-dom';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { getStoredReadBooks } from '../utils';
 
 
 const PageToReadBarchart = () => {
 
-    const books = useLoaderData()
+    const books = getStoredReadBooks()
     // console.log(books);
     
     // data
@@ -38,7 +39,7 @@ const TriangleBar = (props) => {
 };
 
     return (
-        <BarChart
+        <BarChart 
           width={1280}
           height={600}
           data={data}
@@ -57,6 +58,8 @@ const TriangleBar = (props) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="bName" />
           <YAxis />
+          <Tooltip />
+          <Legend/>
           <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % 20]} />

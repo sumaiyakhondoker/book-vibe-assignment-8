@@ -16,11 +16,11 @@ const saveReadBooks = (book)=>{
     const storedReadBooks = getStoredReadBooks()
     const isExist = storedReadBooks.find(storedReadBook => storedReadBook.bookId === book.bookId)
     if(isExist){
-        toast.error('Already read this book!')
+        toast.error('Already Read This Book')
     }else{
         storedReadBooks.push(book)
         localStorage.setItem('readbooks', JSON.stringify(storedReadBooks))
-        toast.success('Book added to readlist successfully!')
+        toast.success('Book Added to Readlist!')
     }
 }
 
@@ -38,15 +38,21 @@ const getStoredWishedBooks = () =>{
 // save to local storage
 const setWishedBooks = (book) =>{
     const storedReadBooks = getStoredReadBooks()
-    const storedWishedBooks = getStoredReadBooks()
+    const storedWishedBooks = getStoredWishedBooks()
   
         const isExist = storedReadBooks.find(readBook => readBook.bookId === book.bookId )
         if(isExist){
             toast.error('You Have Already Read This Book')
         }else{
+            const isExistInWishedBooks = storedWishedBooks.find(wishedBook => wishedBook.bookId === book.bookId)
+            if(isExistInWishedBooks){
+                toast.error('Already Added To Wishlist')
+            }
+            else{
             storedWishedBooks.push(book)
             localStorage.setItem('wishedbooks', JSON.stringify(storedWishedBooks))
-            toast.success('Book added to Wishlist')
+            toast.success('Book Added to Wishlist!')
+            }
         }
     
    

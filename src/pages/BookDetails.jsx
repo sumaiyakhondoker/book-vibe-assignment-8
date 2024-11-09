@@ -1,7 +1,7 @@
 import { useLoaderData, useNavigation, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import toast from "react-hot-toast";
-import { getStoredReadBooks, saveReadBooks } from "../utils";
+import { getStoredReadBooks, saveReadBooks, setWishedBooks } from "../utils";
 
 
 const BookDetails = () => {
@@ -32,7 +32,8 @@ const BookDetails = () => {
   }
   const handleWishlistBtn = ()=>{
     // toast.success('Book added to wishlist successfully!')
-    toast.error('You have already read this!')
+    // toast.error('You have already read this!')
+    setWishedBooks(book)
   }
   const navigation = useNavigation()
   if(navigation.state === 'loading') return <Loader></Loader>

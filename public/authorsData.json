@@ -1,0 +1,177 @@
+
+    [
+      {
+        "name": "Alex Michaelides",
+        "image": "https://i.ibb.co.com/y6wBQcD/author1.jpg",
+        "bio": "Alex Michaelides is a British-Cypriot author and screenwriter. He is best known for his psychological thriller 'The Silent Patient,' which became an international bestseller.",
+        "books": [
+          {
+            "title": "The Silent Patient",
+            "publication_year": 2019,
+            "genre": "Psychological Thriller"
+          },
+          {
+            "title": "The Maidens",
+            "publication_year": 2021,
+            "genre": "Psychological Thriller"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "The Silent Patient Author Alex Michaelides on His Psychological Thriller",
+            "link": "https://www.readersdigest.co.uk/culture/books/meet-the-author/alex-michaelides-on-his-thriller-the-silent-patient"
+          },
+          {
+            "type": "article",
+            "title": "Inside the Mind of Alex Michaelides: Writing The Silent Patient",
+            "link": "https://www.bookpage.com/interviews/23606-alex-michaelides-fiction/"
+          }
+        ]
+      },
+      {
+        "name": "Delia Owens",
+        "image": "https://i.ibb.co.com/5rNmrL0/a2.jpg",
+        "bio": "Delia Owens is an American author and zoologist, best known for her debut novel 'Where the Crawdads Sing,' which topped The New York Times Fiction Best Sellers list for over 100 weeks.",
+        "books": [
+          {
+            "title": "Where the Crawdads Sing",
+            "publication_year": 2018,
+            "genre": "Mystery"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "Delia Owens Talks 'Where the Crawdads Sing' and Nature's Influence on Her Writing",
+            "link": "https://www.nytimes.com/2019/01/12/books/review/delia-owens-where-the-crawdads-sing.html"
+          },
+          {
+            "type": "video",
+            "title": "Delia Owens Discusses 'Where the Crawdads Sing' on CBS This Morning",
+            "link": "https://www.youtube.com/watch?v=4R56sE-aX6I"
+          }
+        ]
+      },
+      {
+        "name": "Brit Bennett",
+        "image": "https://i.ibb.co.com/3FSGg9J/a3.png",
+        "bio": "Brit Bennett is an American novelist and essayist. She gained widespread acclaim for her debut novel 'The Mothers' and her follow-up novel 'The Vanishing Half,' which explores themes of race, identity, and family.",
+        "books": [
+          {
+            "title": "The Mothers",
+            "publication_year": 2016,
+            "genre": "Contemporary Fiction"
+          },
+          {
+            "title": "The Vanishing Half",
+            "publication_year": 2020,
+            "genre": "Historical Fiction"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "Brit Bennett on Writing 'The Vanishing Half'",
+            "link": "https://www.npr.org/2020/06/04/869053733/writing-the-vanishing-half-brit-bennett-explores-race-and-identity"
+          },
+          {
+            "type": "article",
+            "title": "Brit Bennett's Novel 'The Vanishing Half' Is a Must-Read",
+            "link": "https://www.theguardian.com/books/2020/jun/05/the-vanishing-half-review-brit-bennett-race-identity"
+          }
+        ]
+      },
+
+
+
+      {
+        "name": "Tara Westover",
+        "image": "https://i.ibb.co.com/zHCMvNR/a4.jpg",
+        "bio": "Tara Westover is an American memoirist and historian. She is best known for her memoir 'Educated,' which recounts her life growing up in a strict and abusive household in rural Idaho and her journey to self-education.",
+        "books": [
+          {
+            "title": "Educated",
+            "publication_year": 2018,
+            "genre": "Memoir"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "Tara Westover on Writing 'Educated' and Escaping a Survivalist Family",
+            "link": "https://www.theguardian.com/books/2018/mar/10/tara-westover-educated-interview"
+          },
+          {
+            "type": "video",
+            "title": "Tara Westover Talks About 'Educated' on CBS This Morning",
+            "link": "https://www.youtube.com/watch?v=H7q86DJKLEs"
+          }
+        ]
+      },
+
+
+      {
+        "name": "Matt Haig",
+        "image": "https://i.ibb.co.com/vv7TQpX/a5.jpg",
+        "bio": "Matt Haig is a British author known for his novels, non-fiction works, and children's books. His most notable works include 'The Midnight Library' and 'Reasons to Stay Alive,' which focus on mental health and the human experience.",
+        "books": [
+          {
+            "title": "The Midnight Library",
+            "publication_year": 2020,
+            "genre": "Fiction"
+          },
+          {
+            "title": "Reasons to Stay Alive",
+            "publication_year": 2015,
+            "genre": "Memoir"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "Matt Haig on Mental Health and Writing 'The Midnight Library'",
+            "link": "https://www.npr.org/2020/09/29/917554139/the-midnight-library-explores-the-what-ifs-of-life"
+          },
+          {
+            "type": "article",
+            "title": "Matt Haig on Surviving Depression and Writing 'Reasons to Stay Alive'",
+            "link": "https://www.theguardian.com/lifeandstyle/2015/mar/01/matt-haig-depression-reasons-to-stay-alive"
+          }
+        ]
+      },
+
+
+
+      {
+        "name": "Paulo Coelho",
+        "image": "https://i.ibb.co.com/dK2KmXh/a6.jpg",
+        "bio": "Paulo Coelho is a Brazilian author best known for his novel 'The Alchemist,' which has sold over 65 million copies worldwide and has been translated into over 80 languages. His works often explore themes of spirituality and self-discovery.",
+        "books": [
+          {
+            "title": "The Alchemist",
+            "publication_year": 1988,
+            "genre": "Philosophical Fiction"
+          },
+          {
+            "title": "Brida",
+            "publication_year": 1990,
+            "genre": "Fantasy"
+          }
+        ],
+        "featured_content": [
+          {
+            "type": "interview",
+            "title": "Paulo Coelho Discusses 'The Alchemist' and Spiritual Journeys",
+            "link": "https://www.oprah.com/own-super-soul-sunday/paulo-coelho-on-the-alchemist-video"
+          },
+          {
+            "type": "article",
+            "title": "The Wisdom of Paulo Coelho: Life Lessons from 'The Alchemist'",
+            "link": "https://www.nytimes.com/2015/08/02/magazine/the-magical-world-of-paulo-coelho.html"
+          }
+        ]
+      }
+    ]
+  
+  
