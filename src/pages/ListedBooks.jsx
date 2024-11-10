@@ -6,7 +6,7 @@ const ListedBooks = () => {
   // console.log(index);
   return (
     <div className="mt-3 mb-6 lg:mt-6 lg:mb-12">
-      <div className="p-7 flex justify-center bg-slate-100 rounded-2xl">
+      <div className="py-3 lg:p-7 flex justify-center bg-slate-100 rounded-2xl">
         <h3 className="text-3xl font-bold">Books</h3>
       </div>
 
@@ -31,7 +31,7 @@ const ListedBooks = () => {
       </div>
 
     {/* tabs */}
-      <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
+      <div className="flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
         <Link
          to=''
         onClick={()=> setTabIndex(0)}

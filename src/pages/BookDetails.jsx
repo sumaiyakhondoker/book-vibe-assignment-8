@@ -59,7 +59,7 @@ const BookDetails = () => {
           {tags.map(tag => 
             <a href="#" 
             key ={tag}
-            className="badge badge-ghost p-3 text-[#23BE0A]">#{tag}</a>
+            className="badge badge-ghost p-3 text-[#23BE0A] text-xs lg:text-base">#{tag}</a>
           )}
           </div>
           </div>
@@ -81,7 +81,7 @@ const BookDetails = () => {
             
         </div>
         <div className="card-actions justify-start">
-          <button onClick={handleReadBtn} className="btn px-0 lg:px-5 hover:bg-[#23BE0A] hover:text-white text-black border-2 border-gray-300  mr-2">Read</button>
+          <button onClick={handleReadBtn} className="btn lg:px-5 hover:bg-[#23BE0A] hover:text-white text-black border-2 border-gray-300  mr-2">Read</button>
           <button onClick={handleWishlistBtn} className="btn lg:px-5 bg-[#59C6D2] text-white hover:bg-white hover:text-black hover:border-[#59C6D2]">Wishlist</button>
         </div>
       </div>

@@ -1,10 +1,6 @@
-// import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { getStoredReadBooks } from '../utils';
-
-
-const PageToReadBarchart = () => {
-
+const Test = () => {
     const books = getStoredReadBooks()
     // console.log(books);
     
@@ -17,12 +13,27 @@ const PageToReadBarchart = () => {
         const newData = {bName, totalPages}
         data.push(newData)
       })
+
      
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+const color = colors.map(color => color)
+
+// console.log(data);
+
+const props = {
+    fill: {color},
+    x: 5,
+     y:5,
+      width: '100px', 
+      height:'400px'
+
+}
 
 
-console.log(data);
+
+
+
 
 
 const getPath = (x, y, width, height) => {
@@ -37,6 +48,7 @@ const TriangleBar = (props) => {
 
   return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
 };
+
 
     return (
         
@@ -61,7 +73,7 @@ const TriangleBar = (props) => {
           <YAxis />
           <Tooltip />
           <Legend/>
-          <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+          <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar props ={props}/>} label={{ position: 'top' }}>
 
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % 20]} />
@@ -70,8 +82,6 @@ const TriangleBar = (props) => {
         </BarChart>
         
       );
-    }
-    
+};
 
-
-export default PageToReadBarchart;
+export default Test;

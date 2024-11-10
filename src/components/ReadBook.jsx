@@ -7,7 +7,7 @@ const ReadBook = ({book}) => {
 
     const {bookId,image,bookName,author,category,tags,rating,totalPages,publisher,yearOfPublishing} = book
     return (
-        <div className="p-5 border border-gray-300 rounded-2xl shadow-xl ">
+        <div className="p-2 lg:p-5 border border-gray-300 rounded-2xl shadow-xl ">
   <div className="flex   flex-col gap-0 lg:gap-7 lg:flex-row items-center">
     
     <img

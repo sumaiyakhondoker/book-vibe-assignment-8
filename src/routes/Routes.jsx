@@ -11,6 +11,7 @@ import WishlistBooks from "../components/WishlistBooks";
 import Authors from "../pages/Authors";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
+import Test from "../pages/test";
 
 
 export const router = createBrowserRouter([
