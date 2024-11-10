@@ -7,8 +7,7 @@ Live site:
 - Books
 - Book Details Page
 - Listed Books 
-- ReadList
-- WishList
+- ReadList and WishList
 - Author Profiles
 - Contact and Support
 - Responsive Design
