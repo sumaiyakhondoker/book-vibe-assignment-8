@@ -10,8 +10,11 @@ const ReadBooks = () => {
     setReadBooks(storedReadBooks);
   }, [setReadBooks]);
 
-  // ratings in descending order
-// for(const book of readBooks){
+
+
+  // ratings in descending order========================
+ 
+// * for(const book of readBooks){
 //         const id = book.bookId
 //         const rating = book.rating
 //         console.log(id, rating);
@@ -20,18 +23,17 @@ const ReadBooks = () => {
     
 
 
-  const ratings = readBooks.map((book) => book.rating);
+// ** const ratings = readBooks.map((book) => book.rating);
+//   const remainingRatings = ratings.slice(1,ratings.length)
+// //   console.log(remainingRatings);
+// let minRating = ratings[0];
+// for(const rating of remainingRatings){
+//     if(rating < minRating){
+//         minRating = rating
+//     }
+// }
 
-  const remainingRatings = ratings.slice(1,ratings.length)
-//   console.log(remainingRatings);
-let minRating = ratings[0];
-for(const rating of remainingRatings){
-    if(rating < minRating){
-        minRating = rating
-    }
-}
-
-console.log(minRating);
+// console.log(minRating);
 
 
 

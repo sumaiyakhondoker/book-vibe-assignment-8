@@ -1,5 +1,14 @@
 # Book Vibe
 
 Live site:
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [BookVibe](https://book-vibe-assignment.netlify.app/)
+
+ Features of Book Vibe Website: 
+- Books
+- Book Details Page
+- Listed Books 
+- ReadList
+- WishList
+- Author Profiles
+- Contact and Support
+- Responsive Design
